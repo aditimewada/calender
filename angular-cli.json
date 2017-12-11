@@ -21,7 +21,7 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": ["../node_modules/mathjax/MathJax.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "source": "environments/environment.ts",

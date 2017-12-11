@@ -1,0 +1,37 @@
+<html>
+<head>
+        <link  href="../../node_modules/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" >
+</head>
+<body>
+                <mwl-calendar-month-view
+                [viewDate]="viewDate"
+                [events]="events">
+              </mwl-calendar-month-view>
+
+
+                <angular2-fullcalendar [options]="calendarOptions"></angular2-fullcalendar>
+                <br/><br/>
+
+
+                <link  href="../../node_modules/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" >
+        Type a few spaces into the textarea behind the value thats already there
+
+<br/><br/>
+
+
+<textarea
+        #editorArea
+        ngDefaultControl
+        spellcheck="false"
+        class="editor"
+        [(ngModel)]="testValue"
+        
+></textarea>
+<button (click) = "updateResult()"> click</button>
+
+<br/><br/>
+
+<div class="result" #result>{{ editorArea.value}}</div>
+<!-- (keyup)="updateResult()" -->
+</body>
+</html>
